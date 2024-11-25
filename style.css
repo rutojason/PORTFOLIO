@@ -1,0 +1,127 @@
+/* Make the video cover the entire page */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;  /* Ensure the video stays in the background */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    position: relative;
+    z-index: 1;  /* Ensure these elements are on top of the video */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    width: 40px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: a#76de0d63;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e1ff00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 50;
+    padding: 0;
+}
+
+nav ul.center {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul.right {
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#featured-content {
+    height: fill;
+    background-color: #e1ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#picture {
+    height: 100px;
+
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(229, 255, 0, 0.8);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    width: fit-content%;
+}
+
+#social-media-links img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+#social-media-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
